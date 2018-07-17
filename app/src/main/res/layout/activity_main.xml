@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#666">
+
+    <LinearLayout
+        android:id="@+id/game"
+        android:visibility="visible"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <Button
+            android:fontFamily="casual"
+            tools:ignore="ButtonStyle"
+            android:id="@+id/b1"
+            style="@style/btt" />
+        <Button
+            android:fontFamily="casual"
+            tools:ignore="ButtonStyle"
+            android:id="@+id/b2"
+            style="@style/btt" />
+        <Button
+            android:fontFamily="casual"
+            tools:ignore="ButtonStyle"
+            android:id="@+id/b3"
+            style="@style/btt" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <Button
+            android:fontFamily="casual"
+            tools:ignore="ButtonStyle"
+            android:id="@+id/b4"
+            style="@style/btt" />
+        <Button
+            android:fontFamily="casual"
+            tools:ignore="ButtonStyle"
+            android:id="@+id/b5"
+            style="@style/btt" />
+        <Button
+            android:fontFamily="casual"
+            tools:ignore="ButtonStyle"
+            android:id="@+id/b6"
+            style="@style/btt" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <Button
+            android:fontFamily="casual"
+            android:id="@+id/b7"
+            style="@style/btt"
+            tools:ignore="ButtonStyle" />
+        <Button
+            android:fontFamily="casual"
+            tools:ignore="ButtonStyle"
+            android:id="@+id/b8"
+            style="@style/btt" />
+        <Button
+            android:fontFamily="casual"
+            tools:ignore="ButtonStyle"
+            android:id="@+id/b9"
+            style="@style/btt" />
+    </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/winner"
+        android:fontFamily="casual"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:textColor="#FAFAFA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textSize="40sp"
+        android:visibility="invisible"
+        android:text="  Player 1 \n is wenner"
+        />
+
+    <Button
+        android:id="@+id/rest"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:text="rest"
+        android:layout_margin="10dp"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:visibility="invisible"
+        android:id="@+id/share"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:text="share"
+        android:layout_margin="10dp" />
+</RelativeLayout>
